@@ -1,55 +1,44 @@
 ### _Introduction to Node.js with TypeScript_
 
-# Part 1: Setup
+# Part 2: Node.js basics
 
-Node.js lets you execute JavaScript code.
+Because Node.js runs on the server-side rather than in a web browser it provides
+a different set of features.
+For example, a web browser has features for DOM manipulation whereas Node.js has
+features for accessing the file system.
 
-For example you may run `node app.js`.
+Some of these features are global but most are built in packages/modules which
+must be imported/required to be used.
 
-But for this project we write the source code in TypeScript.
-The TypeScript source code must first be compiled into plain JavaScript before it can be executed by Node.js.
+In this step of the project we take a brief look at some basic features.
 
-## Tasks
+_See the [Node.js API documentation](https://nodejs.org/dist/latest-v6.x/docs/api/) for more details._
 
-* `npm i` -- install project dependencies
-* `npm run build` -- build the application
-* `npm start` -- run the application
+## Type definitions
 
-The tasks should be run in the order above.
-Dependencies must be installed before the application can be built and the application must be built before it runs.
+The `@types/node` package is included to inform the TypeScipt compiler of how
+the built in Node.js features are typed.
 
-## Files and directories
+_Type definitions also allow smarter code suggestions in editors with full
+TypeScript support such as [VSCode](https://code.visualstudio.com/)._
 
-#### `source`
+## Environment variables
 
-Our application source code will reside in the `source` directory.
+The `process` global object provides information about the current Node.js process.
 
-The main/entry file for the application is `source/app.ts`.
+Environment variables are found in the `process.env` object.
+To get the `NAME` variable for example we lookup `process.env.NAME`.
 
-#### `dist`
+_See `source/app.ts` for an example and try running `NAME=Matt npm start`._
 
-Compiled files including JavaScript code, sourcemaps, and type definitions will be generated in the `dist` directory.
+## Operating system
 
-The `dist` directory is not checked into the repository. It is created when the `npm run build` task runs.
+The `os` module provides information about the operating system which the Node.js process is running on.
 
-#### `package.json`
+_See `source/app.ts` for an example of finding the OS type and version.`_
 
-The `package.json` file defines information about the 'package'.
+## File system
 
-You will see that it includes a `devDependencies` section which defines which third-party packages are depended on for development.
+The `fs` module provides access to the file system.
 
-There is also a `scripts` section which defines tasks related to the project.
-
-#### `node_modules`
-
-Third-party packages get installed in the `node_modules` directory.
-
-This directory is not checked into the repository. It is created when the `npm i` task runs.
-
-#### `tsconfig.json`
-
-The `tsconfig.json` file indicates that this is a TypeScript project.
-The file contains configuration options for the TypeScript compiler.
-
-_See the [TypeScript documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
-for more information about this file and other TypeScript compiler options._
+_See `source/app.ts` for an example of listing the contents of the project directory.`_
