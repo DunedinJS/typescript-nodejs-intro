@@ -53,3 +53,24 @@ The file contains configuration options for the TypeScript compiler.
 
 _See the [TypeScript documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
 for more information about this file and other TypeScript compiler options._
+
+
+## TypeScript
+
+Take a look at the source files `app.ts` and `greet.ts`.
+
+There are two important things to note about the code:
+
+1. The `greet.ts` module is imported into `app.ts` with `import greet from './greet'` syntax.
+
+    Node.js does not yet support ES module syntax. It only supports CommonJS style which is like `const greet = require('./greet')`.
+
+    TypeScript uses `import` and `export` syntax for modules but the compiler is configured to output the module syntax which Node.js supports.
+
+    _See [Modules](https://www.typescriptlang.org/docs/handbook/modules.html) in the TypeScript Handbook._
+
+2. The `greet` function in `greet.ts` has a type notation which expects argument type to be a string.
+
+    Type notations are a TypeScript feature which are used during compilation but stripped out of the compiled JavaScript output.
+
+    _See [Bacic Types](https://www.typescriptlang.org/docs/handbook/basic-types.html) and [Functions](https://www.typescriptlang.org/docs/handbook/functions.html) in the TypeScript Handbook._
