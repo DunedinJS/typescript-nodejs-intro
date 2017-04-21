@@ -21,6 +21,8 @@ The TypeScript source code must first be compiled into plain JavaScript before i
 
 Our application source code will reside in the `source` directory.
 
+The main/entry file for the application is `source/app.ts`.
+
 #### `dist`
 
 Compiled files including JavaScript code, sourcemaps, and type definitions will be generated in the `dist` directory.
