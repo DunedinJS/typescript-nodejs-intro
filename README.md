@@ -57,6 +57,9 @@ for more information about this file and other TypeScript compiler options._
 
 ## TypeScript
 
+Why TypeScript? Because it lets us use use the latest JavaScript features and provides types which can make code much less error prone.
+Types are optional and  very intelligently which makes them unobtrusive.
+
 Take a look at the source files `app.ts` and `greet.ts`.
 
 There are two important things to note about the code:
@@ -73,4 +76,4 @@ There are two important things to note about the code:
 
     Type notations are a TypeScript feature which are used during compilation but stripped out of the compiled JavaScript output.
 
-    _See [Bacic Types](https://www.typescriptlang.org/docs/handbook/basic-types.html) and [Functions](https://www.typescriptlang.org/docs/handbook/functions.html) in the TypeScript Handbook._
+    _See [Basic Types](https://www.typescriptlang.org/docs/handbook/basic-types.html) and [Functions](https://www.typescriptlang.org/docs/handbook/functions.html) in the TypeScript Handbook._
