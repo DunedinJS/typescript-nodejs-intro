@@ -1,22 +1,17 @@
-// This is the entry file for the application
+import { createServer } from 'http';
+import requestHandler from './requestHandler';
 
-import * as os from 'os';
-import * as fs from 'fs';
-import greet from './greet';
+// create the HTTP server and listen on the port
+const server = createServer(requestHandler);
 
-// let's get the name from an environment variable or use 'TypeScript' by default
-const name = process.env.NAME || 'TypeScript';
+// catch and log server errors
+server.on('error', (error: Error) => {
+  console.error(error);
+});
 
-console.log(greet(name));
+// get the port from the PORT environment variable or default to 8080
+const port = parseInt(process.env.PORT, 10) || 8080;
 
-// let's find out which operating system is running
-const osName = os.type();
-const osVersion = os.release();
-
-console.log(`${osName} ${osVersion}`);
-
-// let's list the contents of the current directory
-fs.readdir('.', (error: Error, files: [string]) => {
-  // Node.js has asynchronous I/O so we get the result in a callback
-  console.log(files.join(', '));
+server.listen(port, () => {
+  console.log(`HTTP server is listening on ${port}`)
 });

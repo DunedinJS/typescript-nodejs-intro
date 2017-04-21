@@ -1,44 +1,35 @@
 ### _Introduction to Node.js with TypeScript_
 
-# Part 2: Node.js basics
+# Part 3: HTTP server
 
-Because Node.js runs on the server-side rather than in a web browser it provides
-a different set of features.
-For example, a web browser has features for DOM manipulation whereas Node.js has
-features for accessing the file system.
+Node.js is very often used to build web servers. Its asynchronous, non-blocking
+I/O offers an advantages in many applications.
 
-Some of these features are global but most are built in packages/modules which
-must be imported/required to be used.
+To run the server first run `npm i` to install project dependencies,
+then `npm run build` to compile the application,
+then `npm start`.
 
-In this step of the project we take a brief look at some basic features.
+The server listens to [http://localhost:8080](http://localhost:8080) by default.
 
-_See the [Node.js API documentation](https://nodejs.org/dist/latest-v6.x/docs/api/) for more details._
+It is also possible to specify the port with an environment variable.
+For example `PORT=3000 npm start`.
 
-## Type definitions
+If you encounter an error when starting the server it is most likely that the
+port is already being used.
 
-The `@types/node` package is included to inform the TypeScipt compiler of how
-the built in Node.js features are typed.
+## `http` module
 
-_Type definitions also allow smarter code suggestions in editors with full
-TypeScript support such as [VSCode](https://code.visualstudio.com/)._
+The [`http` module](https://nodejs.org/dist/latest-v6.x/docs/api/http.html) provides low-level features to for HTTP request and response
+handling. It is the building-block which full fledged web-server frameworks are
+built ontop of.
 
-## Environment variables
+_See the application source files, `app.ts` and `requestHandler.ts`._
 
-The `process` global object provides information about the current Node.js process.
+## TypeScript interfaces
 
-Environment variables are found in the `process.env` object.
-To get the `NAME` variable for example we lookup `process.env.NAME`.
+Because of the `@types/node` package we have type information for Node.js built-in
+features including the `http` module.
 
-_See `source/app.ts` for an example and try running `NAME=Matt npm start`._
-
-## Operating system
-
-The `os` module provides information about the operating system which the Node.js process is running on.
-
-_See `source/app.ts` for an example of finding the OS type and version.`_
-
-## File system
-
-The `fs` module provides access to the file system.
-
-_See `source/app.ts` for an example of listing the contents of the project directory.`_
+In `requestHandler.ts` you can see that the `IncomingMessage` and `ServerResponse`
+interfaces are imported. These are not part of the Node.js `http` module itself
+but part of the extra type information provided by `@types/node`.
