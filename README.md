@@ -14,6 +14,11 @@ You should already have a decent understanding of JavaScript.
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 
+## Why TypeScript?
+
+TypeScript lets us use the latest JavaScript features and also provides static typing which can make code much less error prone.
+Types are optional and inferred very intelligently which makes them unobtrusive.
+
 ## Why Visual Studio Code?
 
 _Don't be scared away by the name -- Visual Studio Code is very different to the full-blown Visual Studio. It is free, open-source, stable, and cross-platform._
