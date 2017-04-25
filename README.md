@@ -1,10 +1,12 @@
 ### _Introduction to Node.js with TypeScript_
 
+_[Back to `master` branch](https://github.com/DunedinJS/typescript-nodejs-intro)_
+
 # Part 1: Setup
 
 Node.js lets you execute JavaScript code.
 
-For example you may run `node app.js`.
+For example you may run `node` on the command-line for an interactive interpreter or `node app.js` to execute a file.
 
 But for this project we write the source code in TypeScript.
 The TypeScript source code must first be compiled into plain JavaScript before it can be executed by Node.js.
@@ -57,16 +59,13 @@ for more information about this file and other TypeScript compiler options._
 
 ## TypeScript
 
-Why TypeScript? Because it lets us use use the latest JavaScript features and provides types which can make code much less error prone.
-Types are optional and  very intelligently which makes them unobtrusive.
-
 Take a look at the source files `app.ts` and `greet.ts`.
 
 There are two important things to note about the code:
 
 1. The `greet.ts` module is imported into `app.ts` with `import greet from './greet'` syntax.
 
-    Node.js does not yet support ES module syntax. It only supports CommonJS style which is like `const greet = require('./greet')`.
+    Node.js does not yet support ES module syntax. It only supports CommonJS style which looks like `const greet = require('./greet')`.
 
     TypeScript uses `import` and `export` syntax for modules but the compiler is configured to output the module syntax which Node.js supports.
 
