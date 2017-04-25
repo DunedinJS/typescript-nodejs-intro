@@ -2,16 +2,6 @@
   "name": "typescript-nodejs-intro",
   "version": "0.0.0",
   "description": "An introduction to Node.js with TypeScript",
-  "main": "source/app.ts",
-  "scripts": {
-    "build": "rimraf ./dist && tsc",
-    "start": "node ./dist/app.js"
-  },
   "author": "matt@norrish.co.nz",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "7.0.13",
-    "rimraf": "2.6.1",
-    "typescript": "2.2.2"
-  }
+  "license": "ISC"
 }

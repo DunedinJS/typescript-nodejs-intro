@@ -1,79 +1,43 @@
-### _Introduction to Node.js with TypeScript_
+# Introduction to Node.js with TypeScript
 
-# Part 1: Setup
+This project will introduce you to both Node.js and TypeScript in a simple to follow, step-by-step format.
 
-Node.js lets you execute JavaScript code.
+You should already have a decent understanding of JavaScript.
 
-For example you may run `node app.js`.
+## Requirements
 
-But for this project we write the source code in TypeScript.
-The TypeScript source code must first be compiled into plain JavaScript before it can be executed by Node.js.
+* Node.js version 6.9 LTS (later versions should also work)
 
-## Tasks
+    [Follow the instructions here to install Node.js](https://github.com/DunedinJS/dunedin-modern-javascript/blob/master/topics/common/nodejs-install.md)
 
-* `npm i` -- install project dependencies
-* `npm run build` -- build the application
-* `npm start` -- run the application
+    Run `node -v` to check your current version
 
-The tasks should be run in the order above.
-Dependencies must be installed before the application can be built and the application must be built before it runs.
+* [Visual Studio Code](https://code.visualstudio.com/)
 
-## Files and directories
+## Why Visual Studio Code?
 
-#### `source`
+_Don't be scared away by the name -- Visual Studio Code is very different to the full-blown Visual Studio. It is free, open-source, stable, and cross-platform._
 
-Our application source code will reside in the `source` directory.
+You can use any editor you'd like but Visual Studio Code offers full TypeScript support
+'out of the box' and an excellent debugger.
 
-The main/entry file for the application is `source/app.ts`.
+## Start
 
-#### `dist`
+1. Clone this repository by running `git clone https://github.com/DunedinJS/typescript-nodejs-intro.git`
+2. `cd ./typescript-nodejs-intro`
 
-Compiled files including JavaScript code, sourcemaps, and type definitions will be generated in the `dist` directory.
+    _If using NVM to manage Node.js versions you should also run `nvm use` here to make sure that the correct version is active._
 
-The `dist` directory is not checked into the repository. It is created when the `npm run build` task runs.
+3. Checkout the branch for the first step by running `001-setup`
 
-#### `package.json`
+4. Refer to the readme for the branch
 
-The `package.json` file defines information about the 'package'.
+There is a different branch for each stage of the project. They each contain their own readme with specific details and are numbered so that the order is clear. For example `001-setup`, `002-node-basics`...
 
-You will see that it includes a `devDependencies` section which defines which third-party packages are depended on for development.
+_After checking out each branch make sure to run `npm i` to install dependencies._
 
-There is also a `scripts` section which defines tasks related to the project.
+## Stages
 
-#### `node_modules`
-
-Third-party packages get installed in the `node_modules` directory.
-
-This directory is not checked into the repository. It is created when the `npm i` task runs.
-
-#### `tsconfig.json`
-
-The `tsconfig.json` file indicates that this is a TypeScript project.
-The file contains configuration options for the TypeScript compiler.
-
-_See the [TypeScript documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
-for more information about this file and other TypeScript compiler options._
-
-
-## TypeScript
-
-Why TypeScript? Because it lets us use use the latest JavaScript features and provides types which can make code much less error prone.
-Types are optional and  very intelligently which makes them unobtrusive.
-
-Take a look at the source files `app.ts` and `greet.ts`.
-
-There are two important things to note about the code:
-
-1. The `greet.ts` module is imported into `app.ts` with `import greet from './greet'` syntax.
-
-    Node.js does not yet support ES module syntax. It only supports CommonJS style which is like `const greet = require('./greet')`.
-
-    TypeScript uses `import` and `export` syntax for modules but the compiler is configured to output the module syntax which Node.js supports.
-
-    _See [Modules](https://www.typescriptlang.org/docs/handbook/modules.html) in the TypeScript Handbook._
-
-2. The `greet` function in `greet.ts` has a type notation which expects argument type to be a string.
-
-    Type notations are a TypeScript feature which are used during compilation but stripped out of the compiled JavaScript output.
-
-    _See [Basic Types](https://www.typescriptlang.org/docs/handbook/basic-types.html) and [Functions](https://www.typescriptlang.org/docs/handbook/functions.html) in the TypeScript Handbook._
+* [`001-setup`](https://github.com/DunedinJS/typescript-nodejs-intro/tree/001-setup)
+* [`002-node-basics`](https://github.com/DunedinJS/typescript-nodejs-intro/tree/002-node-basics)
+* [`003-http`](https://github.com/DunedinJS/typescript-nodejs-intro/tree/003-http)
