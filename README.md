@@ -2,48 +2,38 @@
 
 _[Back to `master` branch](https://github.com/DunedinJS/typescript-nodejs-intro)_
 
-# Part 3: HTTP server
+# Part 4: Debugging
 
-Node.js is very often used to build web servers. Its asynchronous, non-blocking
-I/O offers an advantages in many applications.
+Visual Studio Code includes an excellent debugger with built-in support for Node.js
+applications. Extensions are also available to support other languages and runtimes.
 
-## To run
+This stage adds the `.vscode/launch.json` file which defines how the application
+is launched and connected to the debugger.
+
+## To run the application in the debugger
 
 1. `npm i` -- install project dependencies
 1. `npm run build` -- build the application
-1. `npm start` -- run the application
+1. Switch to the Debug tab in Visual Studio Code and click the green button beside 'Launch'
 
 The server listens to [http://localhost:8080](http://localhost:8080) by default.
 
-It is also possible to specify the port with an environment variable.
-For example `PORT=3000 npm start`.
+The application output is visible in the Debug Console tab of the bottom panel
+and a set of debugging controls appear in an overlay.
 
-If you encounter an error when starting the server it is most likely that the
-port is already being used.
+To stop the debugger click the square, red stop button in the debugging controls.
 
-## `http` module
+## Breakpoints
 
-The [`http` module](https://nodejs.org/dist/latest-v6.x/docs/api/http.html)
-provides low-level features for HTTP request and response handling.
-It is the building-block which full fledged web-server frameworks are built ontop of.
+Breakpoints can be set by clicking in the left gutter of lines in source files.
 
-_See the application source files, `app.ts` and `requestHandler.ts` for basic use._
+Execution is paused when the application encouters a breakpoint.
+While paused you are able to inspect values and the call stack.
 
-## TypeScript interfaces
+[See an example video](./readme-assets/vscode-debug.m4v)
 
-Because of the `@types/node` package we have type information for Node.js built-in
-features including the `http` module.
+By right clicking in the left gutter and selecting 'Add Conditional Breakpoint...'
+you are also able to create breakpoints which only apply if a given condition is met.
 
-In `requestHandler.ts` you can see that the `IncomingMessage` and `ServerResponse`
-interfaces are imported. These are not part of the Node.js `http` module itself
-but part of the extra type information provided by `@types/node`.
-
-TypeScript interfaces are 'duck-typed' -- they specify the expected 'shape' of
-an object.
-
-The `IncomingMessage` and `ServerResponse` interfaces allow TypeScript to verify
-that we don't pass invalid arguments to the function or try to access missing
-properties of the arguments within the function.
-
-_See [Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
-in the TypeScript Handbook._
+_Try setting your own breakpoints and inspecting values.
+Remember that to hit the breakpints you will likely need to make requests to the server._
