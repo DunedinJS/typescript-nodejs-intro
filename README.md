@@ -7,7 +7,6 @@ _[Back to `master` branch](https://github.com/DunedinJS/typescript-nodejs-intro)
 Node.js is very often used to build web servers. Its asynchronous, non-blocking
 I/O offers an advantages in many applications.
 
-
 ## To run
 
 1. `npm i` -- install project dependencies
@@ -46,4 +45,5 @@ The `IncomingMessage` and `ServerResponse` interfaces allow TypeScript to verify
 that we don't pass invalid arguments to the function or try to access missing
 properties of the arguments within the function.
 
-_See [Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html) in the TypeScript Handbook_
+_See [Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
+in the TypeScript Handbook._
