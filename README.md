@@ -30,7 +30,7 @@ Breakpoints can be set by clicking in the left gutter of lines in source files.
 Execution is paused when the application encouters a breakpoint.
 While paused you are able to inspect values and the call stack.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9wP4SDSr-ko" frameborder="0" allowfullscreen></iframe>
+[See an example video](https://youtu.be/9wP4SDSr-ko)
 
 By right clicking in the left gutter and selecting 'Add Conditional Breakpoint...'
 you are also able to create breakpoints which only apply if a given condition is met.
