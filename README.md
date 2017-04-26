@@ -7,9 +7,12 @@ _[Back to `master` branch](https://github.com/DunedinJS/typescript-nodejs-intro)
 Node.js is very often used to build web servers. Its asynchronous, non-blocking
 I/O offers an advantages in many applications.
 
-To run the server first run `npm i` to install project dependencies,
-then `npm run build` to compile the application,
-then `npm start`.
+
+## To run
+
+1. `npm i` -- install project dependencies
+1. `npm run build` -- build the application
+1. `npm start` -- run the application
 
 The server listens to [http://localhost:8080](http://localhost:8080) by default.
 
@@ -21,11 +24,11 @@ port is already being used.
 
 ## `http` module
 
-The [`http` module](https://nodejs.org/dist/latest-v6.x/docs/api/http.html) provides low-level features to for HTTP request and response
-handling. It is the building-block which full fledged web-server frameworks are
-built ontop of.
+The [`http` module](https://nodejs.org/dist/latest-v6.x/docs/api/http.html)
+provides low-level features for HTTP request and response handling.
+It is the building-block which full fledged web-server frameworks are built ontop of.
 
-_See the application source files, `app.ts` and `requestHandler.ts`._
+_See the application source files, `app.ts` and `requestHandler.ts` for basic use._
 
 ## TypeScript interfaces
 
@@ -35,3 +38,12 @@ features including the `http` module.
 In `requestHandler.ts` you can see that the `IncomingMessage` and `ServerResponse`
 interfaces are imported. These are not part of the Node.js `http` module itself
 but part of the extra type information provided by `@types/node`.
+
+TypeScript interfaces are 'duck-typed' -- they specify the expected 'shape' of
+an object.
+
+The `IncomingMessage` and `ServerResponse` interfaces allow TypeScript to verify
+that we don't pass invalid arguments to the function or try to access missing
+properties of the arguments within the function.
+
+_See [Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html) in the TypeScript Handbook_
