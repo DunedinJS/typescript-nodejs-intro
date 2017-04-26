@@ -3,5 +3,6 @@
   "version": "0.0.0",
   "description": "An introduction to Node.js with TypeScript",
   "author": "matt@norrish.co.nz",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "git@github.com:DunedinJS/typescript-nodejs-intro.git"
 }
