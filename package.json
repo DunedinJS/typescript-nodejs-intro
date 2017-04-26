@@ -11,7 +11,7 @@
   "license": "ISC",
   "repository": "git@github.com:DunedinJS/typescript-nodejs-intro.git",
   "devDependencies": {
-    "@types/node": "7.0.x",
+    "@types/node": "6.0.x",
     "rimraf": "2.6.x",
     "typescript": "2.2.x"
   }
