@@ -46,3 +46,4 @@ _After checking out each branch make sure to run `npm i` to install dependencies
 * [`001-setup`](https://github.com/DunedinJS/typescript-nodejs-intro/tree/001-setup)
 * [`002-node-basics`](https://github.com/DunedinJS/typescript-nodejs-intro/tree/002-node-basics)
 * [`003-http`](https://github.com/DunedinJS/typescript-nodejs-intro/tree/003-http)
+* [`004-debugging`](https://github.com/DunedinJS/typescript-nodejs-intro/tree/004-debugging)
