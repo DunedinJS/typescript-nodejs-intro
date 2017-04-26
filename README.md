@@ -16,6 +16,12 @@ At this stage we take a brief look at some basic features.
 
 _See the [Node.js API documentation](https://nodejs.org/dist/latest-v6.x/docs/api/) for more details._
 
+## To run
+
+1. `npm i` -- install project dependencies
+1. `npm run build` -- build the application
+1. `npm start` -- run the application
+
 ## Type definitions
 
 The `@types/node` package is included to inform the TypeScipt compiler of how
