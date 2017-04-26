@@ -11,11 +11,11 @@ For example you may run `node` on the command-line for an interactive interprete
 But for this project we write the source code in TypeScript.
 The TypeScript source code must first be compiled into plain JavaScript before it can be executed by Node.js.
 
-## Tasks
+## To run
 
-* `npm i` -- install project dependencies
-* `npm run build` -- build the application
-* `npm start` -- run the application
+1. `npm i` -- install project dependencies
+1. `npm run build` -- build the application
+1. `npm start` -- run the application
 
 The tasks should be run in the order above.
 Dependencies must be installed before the application can be built and the application must be built before it runs.
