@@ -32,6 +32,11 @@ The `@types` package namespace is used to publish types for JavaScript packages.
 _Type definitions also allow smarter code suggestions in editors with full
 TypeScript support such as [VSCode](https://code.visualstudio.com/)._
 
+#### Viewing definitions
+
+
+![VSCode peek definition](./readme-assets/vscode-peek-definition.gif)
+
 ## Environment variables
 
 The `process` global object provides information about the current Node.js process.
@@ -52,3 +57,4 @@ _See `source/app.ts` for an example of finding the OS type and version.`_
 The `fs` module provides access to the file system.
 
 _See `source/app.ts` for an example of listing the contents of the project directory.`_
+
