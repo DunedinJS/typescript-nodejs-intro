@@ -9,6 +9,7 @@
   },
   "author": "matt@norrish.co.nz",
   "license": "ISC",
+  "repository": "git@github.com:DunedinJS/typescript-nodejs-intro.git",
   "devDependencies": {
     "@types/node": "7.0.x",
     "rimraf": "2.6.x",
