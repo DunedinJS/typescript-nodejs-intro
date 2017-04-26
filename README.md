@@ -30,7 +30,7 @@ Breakpoints can be set by clicking in the left gutter of lines in source files.
 Execution is paused when the application encouters a breakpoint.
 While paused you are able to inspect values and the call stack.
 
-[See an example video](./readme-assets/vscode-debug.m4v)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9wP4SDSr-ko" frameborder="0" allowfullscreen></iframe>
 
 By right clicking in the left gutter and selecting 'Add Conditional Breakpoint...'
 you are also able to create breakpoints which only apply if a given condition is met.
