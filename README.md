@@ -32,10 +32,7 @@ The `@types` package namespace is used to publish types for JavaScript packages.
 _Type definitions also allow smarter code suggestions in editors with full
 TypeScript support such as [VSCode](https://code.visualstudio.com/)._
 
-#### Viewing definitions
-
-
-![VSCode peek definition](./readme-assets/vscode-peek-definition.gif)
+[See an example video of how to view definitions in Visual Studio Code](https://youtu.be/LjoXtkFpkAc)
 
 ## Environment variables
 
