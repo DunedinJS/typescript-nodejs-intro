@@ -1,5 +1,7 @@
 ### _Introduction to Node.js with TypeScript_
 
+_[Back to `master` branch](https://github.com/DunedinJS/typescript-nodejs-intro)_
+
 # Part 3: HTTP server
 
 Node.js is very often used to build web servers. Its asynchronous, non-blocking

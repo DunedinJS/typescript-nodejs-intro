@@ -10,8 +10,8 @@
   "author": "matt@norrish.co.nz",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "7.0.13",
-    "rimraf": "2.6.1",
-    "typescript": "2.2.2"
+    "@types/node": "7.0.x",
+    "rimraf": "2.6.x",
+    "typescript": "2.2.x"
   }
 }
