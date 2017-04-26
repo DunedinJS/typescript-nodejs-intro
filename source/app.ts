@@ -16,7 +16,7 @@ const osVersion = os.release();
 console.log(`${osName} ${osVersion}`);
 
 // let's list the contents of the current directory
-fs.readdir('.', (error: Error, files: [string]) => {
+fs.readdir('.', (error: NodeJS.ErrnoException, files: string[]) => {
   // Node.js has asynchronous I/O so we get the result in a callback
   console.log(files.join(', '));
 });
