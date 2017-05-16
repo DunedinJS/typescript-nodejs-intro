@@ -4,5 +4,8 @@
   "description": "An introduction to Node.js with TypeScript",
   "author": "matt@norrish.co.nz",
   "license": "ISC",
-  "repository": "git@github.com:DunedinJS/typescript-nodejs-intro.git"
+  "repository": "git@github.com:DunedinJS/typescript-nodejs-intro.git",
+  "engines": {
+    "node" : ">=6.9"
+  }
 }
