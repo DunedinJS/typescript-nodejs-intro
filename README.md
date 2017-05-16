@@ -24,7 +24,7 @@ _See the [Node.js API documentation](https://nodejs.org/dist/latest-v6.x/docs/ap
 
 ## Type definitions
 
-The `@types/node` package is included to inform the TypeScipt compiler of how
+The `@types/node` package is included to inform the TypeScript compiler of how
 the built in Node.js features are typed.
 
 The `@types` package namespace is used to publish types for JavaScript packages.
@@ -47,11 +47,11 @@ _See `source/app.ts` for an example and try running `NAME=Matt npm start`._
 
 The `os` module provides information about the operating system which the Node.js process is running on.
 
-_See `source/app.ts` for an example of finding the OS type and version.`_
+_See `source/app.ts` for an example of finding the OS type and version._
 
 ## File system
 
 The `fs` module provides access to the file system.
 
-_See `source/app.ts` for an example of listing the contents of the project directory.`_
+_See `source/app.ts` for an example of listing the contents of the project directory._
 
